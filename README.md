@@ -8,3 +8,6 @@ A Total Calculator supporting multiple rules application on predefined items
 `npm start -- --items=0001,0001,0001`
 
 `npm start -- --items=0002,0002,0003`
+
+## Running unit tests
+Run `npm test` to execute the unit tests and see coverage report via [jest]
