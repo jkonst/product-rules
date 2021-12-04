@@ -1,5 +1,5 @@
 import {Big} from "big.js";
-import {Item} from "../../model/model";
+import {Item} from "@src/model/model";
 
 export const compose = (...fns) => val => fns.reduceRight((prev, fn) => fn(prev), val);
 

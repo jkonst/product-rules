@@ -1,5 +1,5 @@
 import {Big} from "big.js";
-import {Item} from "../../model/model";
+import {Item} from "@src/model/model";
 
 export const totalDiscountPredicate = (items: Item[], threshold: number): boolean => {
     const totalPrice = items.reduce((acc, cur) =>
