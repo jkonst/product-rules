@@ -6,7 +6,7 @@ import {singleItemPredicate, totalDiscountPredicate} from "./checkout/rules/prom
 const main = () => {
     let itemIds = [];
     try {
-        itemIds = getItemIds();
+        itemIds = getItemIdsFromCLI();
     } catch (e: unknown) {
         throw e;
     }
@@ -27,7 +27,7 @@ const calculate = (itemIds: string[]): void => {
     }
 }
 
-const getItemIds = (): string[] => {
+const getItemIdsFromCLI = (): string[] => {
     if (process.argv.length < 3) {
         throw new Error('No item ids were given...');
     }
